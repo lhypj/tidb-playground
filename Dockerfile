@@ -1,8 +1,8 @@
-FROM bitnami/minideb:jessie
+FROM bitnami/minideb:latest-arm64
 
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
-ENV TIDB_VERSION=v4.0.0
+ENV TIDB_VERSION=v4.0.8
 
 RUN  curl --proto '=https' --tlsv1.2 -sSf https://tiup-mirrors.pingcap.com/install.sh | sh && ln -s /root/.tiup/bin/tiup /bin/tiup
 
