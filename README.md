@@ -1,4 +1,4 @@
-# tidb-playground
+# tiup-playground
 Dockerfile for tidb playground using tiup
 
 The image is available at https://hub.docker.com/r/sunnyandpj/tidb_playground.
